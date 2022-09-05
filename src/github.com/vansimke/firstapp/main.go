@@ -1,23 +1,23 @@
 package main
 
 import (
-		"fmt" 
+	"fmt"
+	"os"
 )
 
-const  (
-		 isAdmin = 1 << iota
-		 isHeadquarters
-		 canSeeFinancials
-
-		 canSeeAfrica
-		 canSeeAsia
-		 canSeeEurope
-		 canSeeNorthAmerica
-		 canSeeSouthAmerica
-)
-func main() {
-	var roles byte = isAdmin | canSeeFinancials | canSeeEurope	
-	fmt.Printf("%b\n", roles)
-	fmt.Printf("Is Admin updt? %v\n", isAdmin & roles == isAdmin)
-	fmt.Printf("Is HQ? %v", isHeadquarters & roles == isHeadquarters)
-}	 
+func mydetails() {
+	name="[%s]\n", age[int], phonenumber[int], height[float64] [string]
+	//	var return :=("my name is [ibinabo]")
+		s2 := result2
+		s3 := result3
+		s4 := result4 
+	return result
+}
+	
+func main () {
+	y:= Ibinabo
+	mydetails := fmt.SPrintf(io.error, "my name is %s", y)
+	error = ")"
+	if x= errors
+	fmt.Println(x)
+}
