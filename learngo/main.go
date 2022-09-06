@@ -5,6 +5,10 @@ import(
 )
 
 func main () {
-		grades := [3]int{97, 85, 93}
-		fmt.Printf("Grades: %v", grades)
+		var students [3] string
+		fmt.Printf("Students: %v\n", students)
+		students[0] = "Lisa"
+		students[1] = "Arnold"
+		students[2] = "Ahmed"
+		fmt.Printf("Students: %v\n", students)
 }
