@@ -5,19 +5,11 @@ import (
 	"os"
 )
 
-func mydetails() {
-	name="[%s]\n", age[int], phonenumber[int], height[float64] [string]
-	//	var return :=("my name is [ibinabo]")
-		s2 := result2
-		s3 := result3
-		s4 := result4 
-	return result
+func mydetails(name  string, age int, phonenumber string, height float64) string {
+	//	ibinabo, 24, +1238148969926, 5'9
+
+	s := fmt.Sprintf("%s is %d years old.\n", name, age, phonenumber, height)
+	print(s)
 }
-	
-func main () {
-	y:= Ibinabo
-	mydetails := fmt.SPrintf(io.error, "my name is %s", y)
-	error = ")"
-	if x= errors
-	fmt.Println(x)
-}
+
+

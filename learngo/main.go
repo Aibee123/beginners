@@ -5,9 +5,14 @@ import(
 )
 
 func main() {
-		var identityMatrix [3][3]int
-		identityMatrix[0] = [3]int{1, 0, 1}
-		identityMatrix[1] = [3]int{0, 1, 0}
-		identityMatrix[2] = [3]int{0, 0, 1}
-		fmt.Println(identityMatrix)
-}  
+		statePopulations := map[string]int{
+			"Califonia": 		39250017,
+			"Texas": 			27862596,
+			"Florida":	 		20612439,
+			"New York":	 		19745289,
+			"Pennsylvania":		12802503,
+			"Illinois":			12801539,
+			"Ohio":				11614373,
+		}
+		fmt.Println(statePopulations)
+}
