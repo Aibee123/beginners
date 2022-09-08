@@ -15,6 +15,6 @@ func main() {
 			"Ohio":				11614373,
 		}
 		fmt.Println(statePopulations)
-		statePopulations["Georgia"] = 10310371
+		delete(statePopulations, "Georgia") 
 		fmt.Println(statePopulations)
 }
