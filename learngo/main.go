@@ -4,16 +4,21 @@ import(
 		"fmt"
 )
 
+type Doctor struct {
+		number int
+		actorName string
+		companions []string
+}
+
 func main() {
-		statePopulations := map[string]int{
-			"Califonia": 		39250017,
-			"Texas": 			27862596,
-			"Florida":	 		20612439,
-			"New York":	 		19745289,
-			"Pennsylvania":		12802503,
-			"Illinois":			12801539,
-			"Ohio":				11614373,
-		}
-		pop, ok := statePopulations ["Ohio"]
-		fmt.Println(pop, ok)
+		aDoctor:= Doctor{
+				number: 3,
+				actorName: "Jon Pertwee",
+				companions: []string {
+						"Liz Shaw",
+						"Jo Grant",
+						"Sarah Jane Smith",
+				},
+			}
+			fmt.Println(aDoctor.actorName)
 }
