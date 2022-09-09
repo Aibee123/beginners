@@ -6,9 +6,11 @@ import(
 
 func main() {
 		number := 50
-		guess := 30
-		if guess < 1 || guess > 100 {
-				fmt.Println("The guess must be between 1 and 100!")
+		guess := 105
+		if guess < 1 {
+		fmt.Println("The guess must be greater than 1!")
+		} else  if guess > 100 {
+				fmt.Println("The guess must be less than 100!")
 		} else	{
 				if guess < number {
 						fmt.Println("Too low")
