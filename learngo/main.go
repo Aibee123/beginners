@@ -9,8 +9,7 @@ func main() {
 		guess := 105
 		if guess < 1 || returnTrue() || guess > 100 {
 				fmt.Println("The guess must be between 1 and 100!")
-		}
-		if guess >= 1 && guess <= 100 {
+		} else	{
 				if guess < number {
 						fmt.Println("Too low")
 				}
