@@ -6,8 +6,8 @@ import(
 
 func main() {
 		number := 50
-		guess := 105
-		if guess < 1 || returnTrue() || guess > 100 {
+		guess := 30
+		if guess < 1 || guess > 100 {
 				fmt.Println("The guess must be between 1 and 100!")
 		} else	{
 				if guess < number {
@@ -21,9 +21,4 @@ func main() {
 				}
 				fmt.Println(number<=guess, number >=guess, number!=guess)
 		}		
-}
-
-func returnTrue() bool {
-		fmt.Println("returning true")
-		return true
 }
