@@ -6,7 +6,7 @@ import(
 
 func main() {
 		number := 50
-		guess := -5
+		guess := 105
 		if guess < 1 || returnTrue() || guess > 100 {
 				fmt.Println("The guess must be between 1 and 100!")
 		}
