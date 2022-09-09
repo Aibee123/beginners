@@ -6,7 +6,7 @@ import(
 
 func main() {
 		number := 50
-		guess := 105
+		guess := -5
 		if guess < 1 {
 		fmt.Println("The guess must be greater than 1!")
 		} else  if guess > 100 {
