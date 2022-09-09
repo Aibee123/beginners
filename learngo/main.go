@@ -6,15 +6,18 @@ import(
 
 func main() {
 		number := 50
-		guess := 70
-		if guess < number {
-				fmt.Println("Too low")
+		guess := -5
+		if guess < 1 || guess > 100 {
+				fmt.Println("The guess must be between 1 and 100!")
 		}
-		if guess > number {
-				fmt.Println("Too high")
-		}
-		if guess == number {
-				fmt.Println("You got it")
-		}
-		fmt.Println(number<=guess, number >=guess, number!=guess)
+				if guess < number {
+						fmt.Println("Too low")
+				}
+				if guess > number {
+						fmt.Println("Too high")
+				}
+				if guess == number {
+						fmt.Println("You got it")
+				}
+				fmt.Println(number<=guess, number >=guess, number!=guess)
 }
