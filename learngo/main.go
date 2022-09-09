@@ -10,6 +10,7 @@ func main() {
 		if guess < 1 || guess > 100 {
 				fmt.Println("The guess must be between 1 and 100!")
 		}
+		if guess >= 1 && guess <= 100 {
 				if guess < number {
 						fmt.Println("Too low")
 				}
@@ -20,4 +21,5 @@ func main() {
 						fmt.Println("You got it")
 				}
 				fmt.Println(number<=guess, number >=guess, number!=guess)
+		}		
 }
