@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-		var i interface {} = "1"
+		var i interface {} = [3]int{}
 		switch i. (type) {
 		case int:
 				fmt.Println("i is an int")
@@ -13,7 +13,9 @@ func main() {
 				fmt.Println("i is a float64")
 		case string:
 				fmt.Println("i is a string")
-		default:
+		case [3]int:
+				fmt.Println("i is [3]int")
+			default:
 				fmt.Println("i is another type")
 		}
 }
