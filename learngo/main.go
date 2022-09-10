@@ -6,5 +6,7 @@ import (
 
 func main() {
 		s := []int{1, 2, 3}
-		fmt.Println(s[1])
+		for k, v := range s {
+				fmt.Println(k, v)
+		}
 }
