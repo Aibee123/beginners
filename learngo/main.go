@@ -6,6 +6,6 @@ import (
 
 func main() {
 		for i, j := 0, 0; i < 5; i, j = i+1, j+1 {
-				fmt.Println(i)
+				fmt.Println(i, j)
 		}
 }   
