@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-		var i interface {} = 1
+		var i interface {} = 1.0
 		switch i. (type) {
 		case int:
 				fmt.Println("i is an int")
