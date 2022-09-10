@@ -5,12 +5,6 @@ import (
 )
 
 func main() {
-		i := 0
-		for ;i < 5; {
-				fmt.Println(i)
-				i++
-				if i == 5 {
-						break
-				}
-		} 
-}   
+		s := []int{1, 2, 3}
+		fmt.Println(s[1])
+}
