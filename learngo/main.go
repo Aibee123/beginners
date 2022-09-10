@@ -9,6 +9,8 @@ func main() {
 		for ;i < 5; {
 				fmt.Println(i)
 				i++
-		}
-		 
+				if i == 5 {
+						break
+				}
+		} 
 }   
