@@ -5,13 +5,15 @@ import (
 )
 
 func main() {
-		i := 10
-		switch {
-		case i <= 10 :
-				fmt.Println("less than or equal to ten")
-		case i <= 20:
-				fmt.Println("less than or equal to twenty")
+		var i interface {} = 1
+		switch i. (type) {
+		case int:
+				fmt.Println("i is an int")
+		case float64:
+				fmt.Println("i is a float64")
+		case string:
+				fmt.Println("i is a string")
 		default:
-				fmt.Println("greater than twenty")
+				fmt.Println("i is another type")
 		}
 }
