@@ -1,11 +1,13 @@
 package main
 
-import (
-		"fmt"
-)
+import	"net/http"
 
 func main() {
-		defer fmt.Println("start")
-		defer fmt.Println("middle")
-		defer fmt.Println("end")
+		http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+			w.Write([]byte("Hello Go!"))
+		})
+		err := http.ListenAndServe(":8080", nil)
+		if err != nil {
+				panic(err.Error())
+		}
 }
