@@ -2,21 +2,11 @@ package main
 
 import (
 		"fmt"
-	 	"log"
 )
 
 func main() {
-		fmt.Println("start")
-		panicker()
-		fmt.Println("end")
+		sayMessage("Hello Go!")
 }
-func panicker() {
-		fmt.Println("about to panic")
-		defer func() {
-				if err := recover(); err != nil {
-						log.Println("Error:", err)
-				}
-		}()
-		panic("something bad happened")
-		fmt.Println("done panicking")
+func sayMessage(msg string) {
+		fmt.Println(msg)
 }
