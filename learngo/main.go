@@ -5,21 +5,13 @@ import (
 )
 
 func main() {
-		myInt := IntCounter(0)
-		var inc Incrementer = &myInt
-		for i := 0; i < 10; i++ {
-				fmt.Println(inc.Increment())
+		var i interface{} = 1
+		switch i. (type) {
+		case int:
+				fmt.Println("i is an interger")
+		case string:
+				fmt.Println("i is a string")
+		default:
+				fmt.Println("I don't know what i is")
 		}
-
-}
-
-type Incrementer interface {
-		Increment() int
-}
-
-type IntCounter int
-
-func (ic *IntCounter) Increment() int {
-		*ic++
-		return int(*ic)
 }
