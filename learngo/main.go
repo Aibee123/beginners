@@ -5,9 +5,8 @@ import (
 )
 
 func main() {
-		for i := 0; i < 5; i++ {
-				func(i int) {
-						fmt.Println(i)
-				}(i)
+		var f func() = func() {
+				fmt.Println("Hello Go!")
 		}
+		f()
 }
