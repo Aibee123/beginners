@@ -4,16 +4,11 @@ import (
 		"fmt"
 )
 
- func main() {
-		s := sum(1, 2, 3, 4, 5)
-		fmt.Println("The sum is", *s)
+func main() {
+		d := divide(5.0, 3.0)
+		fmt.Println(d)
 }
 
-func sum(values ...int)	*int {
-		fmt.Println(values)
-		result := 0
-		for _, v := range values {
-				result += v
-		}
-		return &result
+func divide(a, b float64) float64 {
+		return a / b
 }
