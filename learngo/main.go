@@ -5,8 +5,9 @@ import (
 )
 
 func main() {
-		func() {
-				msg := "Hello Go!"
-				fmt.Println(msg)
-		}()
+		for i := 0; i < 5; i++ {
+				func(i int) {
+						fmt.Println(i)
+				}(i)
+		}
 }
