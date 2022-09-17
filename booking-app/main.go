@@ -31,7 +31,7 @@ func main() {
 	fmt.Scan(&userTickets)
 
 	remainingTickets = remainingTickets - userTickets
-	bookings[0] = firstName + "" + lastName
+	bookings[0] = firstName + " " + lastName
 
 	fmt.Printf("The whole array: %v\n", bookings)
 	fmt.Printf("The first value: %v\n", bookings[0])
