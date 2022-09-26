@@ -1,13 +1,14 @@
-package main
+package main 
 
 import (
+	"booking-app/helper"
 	"fmt"
 	"strings"
 )
 
 	const conferenceTickets int = 50
-	var conferenceName = "Go Conference"
 	var remainingTickets uint = 50
+	var conferenceName = "Go Conference"
 	var bookings = []string{}
 
 func main() {
@@ -17,7 +18,7 @@ func main() {
 	for {
 
 		firstName, lastName, email, userTickets := getUserInput()
-		isValidName, isValidEmail, isValidTicketNumber := validateUserInput(firstName, lastName, email, userTickets, remainingTickets)
+		isValidName, isValidEmail, isValidTicketNumber := helper.validateUserInput(firstName, lastName, email, userTickets, remainingTickets)
 
 		if isValidName && isValidEmail && isValidTicketNumber {
 
